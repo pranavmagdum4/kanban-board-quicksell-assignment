@@ -1,0 +1,99 @@
+/* General layout for the list container */
+.list-container {
+    width: 220px;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* Optional for more visual clarity */
+    border-radius: 0.5rem;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* The last container should have right spacing */
+  .list-container:last-child {
+    margin-right: 2.5rem;
+  }
+  
+  /* Styling for the header */
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--grey1);
+    padding-bottom: 1rem;
+  }
+  
+  /* Left side of the header */
+  .list-header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Title styling */
+  .list-title {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  /* The card count */
+  .list-sum {
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+  }
+  
+  /* Right side of the header */
+  .list-header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Add new item button */
+  .list-add-item {
+    cursor: pointer;
+    color: var(--textgrey);
+  }
+  
+  .list-add-item:hover {
+    background-color: var(--grey1);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+  }
+  
+  /* Options for list settings */
+  .list-option-item {
+    cursor: pointer;
+    color: var(--textgrey);
+  }
+  
+  .list-option-item:hover {
+    background-color: var(--grey1);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+  }
+  
+  /* Cards within the list */
+  .list-card-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 500px) and (min-width: 300px) {
+    .list-container {
+      width: 320px;
+      margin-left: 1.5rem;
+    }
+    .list-container:last-child {
+      margin-right: 1.5rem;
+    }
+  }
+  
